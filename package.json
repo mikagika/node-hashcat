@@ -18,7 +18,7 @@
   "bin": {
     "hashcat": "bin/hashcat.js"
   },
-  "scripts": {"start":"node bin\/hashcat.js",
+  "scripts": {"start":"node bin\/hashcat.js example\\tryMe.html example\\tryMe_out.html -b",
     "test": "tape ./**/_*_test.js | faucet"
   },
   "dependencies": {

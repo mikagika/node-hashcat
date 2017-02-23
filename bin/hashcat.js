@@ -11,6 +11,7 @@ var pjson = require(path.join(binDir, "../package.json"));
 var getopt = GetOpt
         .create([
             ["h", "help",    "Display this help"],
+            ["b", "bare",    "Don't add cache busting hash code"],
             ["v", "verbose", "Enable debug output"]
         ])
         .setHelp([
@@ -40,5 +41,6 @@ var outputHtmlFile = opt.argv[1] || htmlFile;
 
 hcat.hashcatify({
     htmlFile: htmlFile,
-    outputHtmlFile: outputHtmlFile
+    outputHtmlFile: outputHtmlFile,
+    opts: opt.options
 });
