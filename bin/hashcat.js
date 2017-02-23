@@ -12,6 +12,7 @@ var getopt = GetOpt
         .create([
             ["h", "help",    "Display this help"],
             ["b", "bare",    "Don't add cache busting hash code"],
+            ["d", "delete",  "Delete the concatenated files"],
             ["v", "verbose", "Enable debug output"]
         ])
         .setHelp([
